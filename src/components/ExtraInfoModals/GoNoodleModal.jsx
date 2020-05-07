@@ -29,7 +29,7 @@ const logos = {
 
 const GoNoodleModal = () => {
   const [smeTooltip, setSMETooltip] = useState(false);
-  const [activeTab, setActiveTab] = useState('dreamworks');
+  const [activeTab, setActiveTab] = useState('disney');
   return (
     <>
       <ExtraInfoModal

@@ -18,7 +18,7 @@ const EmmaModal = () => {
         interested in experiencing a destination as though they were a local.
       </p>
       <p>
-        <b>I built a program</b> that consisted of <b>350+ travel agents</b>{' '}
+        I <b>built a program</b> that consisted of <b>350+ travel agents</b>{' '}
         that deeply understood their specialty locations and could assist
         travelers in taking a trip of a lifetime.
       </p>
