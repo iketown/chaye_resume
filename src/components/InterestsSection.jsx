@@ -15,7 +15,7 @@ const InterestsSection = () => {
         <h2 className="mb-5">Interests</h2>
         <Container>
           <Row>
-            <Col xs="12" md="8">
+            <Col xs="12">
               <p>
                 Outside of work, I spend time chasing around my two boys and
                 stealing moments together with my husband.
@@ -30,24 +30,16 @@ const InterestsSection = () => {
                 the sweet moments with friends and family.
               </p>
             </Col>
-            <Col xs="4">
-              <img
-                src={family}
-                style={{
-                  width: '100%',
-                  borderRadius: '2rem',
-                }}
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col xs="4">
+            {/* <Col xs="6" md="4" className="mb-3">
+              <img src={family} width="100%" />
+            </Col> */}
+            <Col xs="6" md="4" className="mb-3">
               <img src={lourve} width="100%" />
             </Col>
-            <Col xs="4">
+            <Col xs="6" md="4" className="mb-3">
               <img src={statue} width="100%" />
             </Col>
-            <Col xs="4">
+            <Col xs="6" md="4" className="mb-3">
               <img src={amsterdam} width="100%" />
             </Col>
           </Row>
