@@ -1,39 +1,39 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Resume', // <title>
-  manifestName: 'Resume',
-  manifestShortName: 'Landing', // max 12 characters
+  siteTitle: 'Chaye Eichenberger', // <title>
+  manifestName: 'Chaye',
+  manifestShortName: 'Chaye', // max 12 characters
   manifestStartUrl: '/',
-  manifestBackgroundColor: '#663399',
-  manifestThemeColor: '#663399',
+  manifestBackgroundColor: '#339099',
+  manifestThemeColor: '#339099',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `/gatsby-starter-resume/`, // This path is subpath of your hosting https://domain/portfolio
-  firstName: 'Anubhav',
-  lastName: 'Srivastava',
+  firstName: 'Chaye',
+  lastName: 'Eichenberger',
   // social
   socialLinks: [
     {
-      icon: 'fa-github',
-      name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      icon: 'far fa-envelope',
+      name: 'Email',
+      url: 'mailto:chayeann@gmail.com',
     },
     {
-      icon: 'fa-linkedin-in',
+      icon: 'fab fa-linkedin-in',
       name: 'Linkedin',
-      url: 'https://linkedin.com/in/theanubhav/',
+      url: 'https://www.linkedin.com/in/chayeann/',
     },
     {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
+      icon: 'fab fa-instagram',
+      name: 'Instagram',
+      url: 'https://www.instagram.com/chayeann/',
     },
     {
-      icon: 'fa-facebook-f',
+      icon: 'fab fa-facebook',
       name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
+      url: 'https://www.facebook.com/chaye.spector',
     },
   ],
-  email: 'anubhav.srivastava00@gmail.com',
-  phone: '000-00000',
-  address: '305 Del Sol, Sunnyvale, CA',
+  email: 'chayeann@gmail.com',
+  phone: '615.943.6639',
+  address: 'Brentwood, TN 37027',
 };
