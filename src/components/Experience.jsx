@@ -89,7 +89,11 @@ const Experience = ({
               </Modal>
             )}
             {(modalContent || moreContent) && (
-              <Button onClick={getMoreInfo} color="primary">
+              <Button
+                className="btn-info btn-sm"
+                onClick={getMoreInfo}
+                color="primary"
+              >
                 MORE INFO
               </Button>
             )}
@@ -103,6 +107,7 @@ const Experience = ({
           >
             <img
               src={largeImage}
+              alt="logo"
               className="mt-4 d-none d-md-block"
               style={{
                 maxWidth: '10rem',

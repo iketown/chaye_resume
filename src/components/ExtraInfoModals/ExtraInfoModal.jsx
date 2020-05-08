@@ -22,7 +22,6 @@ const ImgContainer = styled.div`
     opacity: 0.08;
   }
 `;
-const FadedBg = styled.div``;
 const ExtraInfoModal = ({
   companyName,
   logoImg,

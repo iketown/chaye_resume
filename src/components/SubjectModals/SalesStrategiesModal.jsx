@@ -14,7 +14,7 @@ const Highlight = styled.div`
 const SalesStrategiesModal = () => {
   return (
     <ListGroup flush>
-      <SubjectListItem image={GNSmall} company="Go Noodle">
+      <SubjectListItem image={GNSmall} company="GoNoodle">
         Conceptualized, created, and executed integrated sales proposals across
         multiple categories such as entertainment, food, healthcare, sports and
         retail

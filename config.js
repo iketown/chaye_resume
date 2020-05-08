@@ -35,5 +35,5 @@ module.exports = {
   ],
   email: 'chayeann@gmail.com',
   phone: '615.943.6639',
-  address: 'Brentwood, TN 37027',
+  address: 'Brentwood, TN',
 };

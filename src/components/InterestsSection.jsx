@@ -1,5 +1,4 @@
 import React from 'react';
-import family from '../assets/images/family.jpeg';
 import lourve from '../assets/images/lourve.jpeg';
 import statue from '../assets/images/statue.jpeg';
 import amsterdam from '../assets/images/amsterdam.jpeg';

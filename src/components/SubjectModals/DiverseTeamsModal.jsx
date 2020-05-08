@@ -9,17 +9,12 @@ const DiverseTeamsModal = () => {
   return (
     <ListGroup flush>
       <SubjectListItem image={amex} company="American Express Travel">
-        <ul className="ml-0">
-          <li>Managed a team of 350+ agents</li>
-          <li>Conducted needs assessments of staff based on performance</li>
-          <li>
-            Provided training and feedback to increase individual team member
-            productivity
-          </li>
-          <li>Set standards for involvement in a specialized program</li>
-        </ul>
+        Managed a team of 350+ agents: conducted needs assessments of staff
+        based on performance, provided training and feedback to increase
+        individual team member productivity, and set standards for involvement
+        in a specialized program.
       </SubjectListItem>
-      <SubjectListItem image={GNSmall} company="Go Noodle">
+      <SubjectListItem image={GNSmall} company="GoNoodle">
         Managed the development and delivery of large scale projects that
         involved cross-departmental team contributions from product, content,
         marketing, c-suite, sales, and external stakeholders.

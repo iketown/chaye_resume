@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import GNLogo from '../../assets/images/GoNoodle-Logo.png';
 import ExtraInfoModal from './ExtraInfoModal';
 import GNLarge from '../../assets/images/goNoodleLarge.png';
 import GNChamps from '../../assets/images/goNoodleChamps.png';
@@ -28,7 +27,6 @@ const logos = {
 };
 
 const GoNoodleModal = () => {
-  const [smeTooltip, setSMETooltip] = useState(false);
   const [activeTab, setActiveTab] = useState('disney');
   return (
     <>
@@ -116,12 +114,12 @@ const Logo = ({ image, company }) => {
   return <StyledLogo image={image} />;
 };
 
-const links = {
-  disney: 'https://www.youtube.com/watch?v=W387m-ved6o',
-  disneyXD: 'https://www.youtube.com/watch?v=k0HDStQjIhg',
-  mgm: 'https://www.youtube.com/watch?v=zuQGpGRw02A',
-  dreamworks: 'https://www.youtube.com/watch?v=KhfkYzUwYFk',
-  paramount: 'https://www.youtube.com/watch?v=aZru-M3TUlI',
-  nick: 'https://www.youtube.com/watch?v=Fb4BREQCcf0',
-  nfl: 'https://family.gonoodle.com/activities/performance-training',
-};
+// const links = {
+//   disney: 'https://www.youtube.com/watch?v=W387m-ved6o',
+//   disneyXD: 'https://www.youtube.com/watch?v=k0HDStQjIhg',
+//   mgm: 'https://www.youtube.com/watch?v=zuQGpGRw02A',
+//   dreamworks: 'https://www.youtube.com/watch?v=KhfkYzUwYFk',
+//   paramount: 'https://www.youtube.com/watch?v=aZru-M3TUlI',
+//   nick: 'https://www.youtube.com/watch?v=Fb4BREQCcf0',
+//   nfl: 'https://family.gonoodle.com/activities/performance-training',
+// };

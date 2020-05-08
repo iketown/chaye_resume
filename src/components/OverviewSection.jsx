@@ -27,7 +27,7 @@ const OverviewSection = () => {
           </span>
         </h1>
         <div className="subheading mb-5">
-          {config.address} · {config.phone} ·
+          {config.address} · {config.phone} ·{' '}
           <a href={`mailto:${config.email}`}>{config.email}</a>
         </div>
         <div className="mb-5">{renderAst(htmlAst)}</div>

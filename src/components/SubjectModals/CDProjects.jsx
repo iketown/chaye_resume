@@ -8,7 +8,7 @@ import { ListGroup } from 'reactstrap';
 const CDProjects = () => {
   return (
     <ListGroup flush>
-      <SubjectListItem image={GNSmall} company="Go Noodle">
+      <SubjectListItem image={GNSmall} company="GoNoodle">
         Managed the development and delivery of large scale projects that
         involved cross-departmental team contributions from product, content,
         marketing, c-suite, sales, and external stakeholders.
