@@ -30,7 +30,6 @@ const ModalLink = ({ to, children }) => {
         className="text-primary"
         onClick={() => {
           setModalOpen(true);
-          console.log('CLICKED', to);
         }}
       >
         {children}

@@ -1,12 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ListGroupItem, ListGroupItemHeading, Row, Col } from 'reactstrap';
-
-const StyledSLI = styled.div`
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
-`;
+import { ListGroupItem, Row, Col } from 'reactstrap';
 
 const ImageDisplay = styled.div`
   background-image: url(${p => p.image});
@@ -30,7 +24,6 @@ const SubjectListItem = ({ image, company, children }) => {
         <Col className="d-none d-lg-block" lg="2">
           <ImageDisplay image={image} />
         </Col>
-        {/* <img className="ml-3" src={image} width={70} height={70} /> */}
       </Row>
     </ListGroupItem>
   );

@@ -7,12 +7,10 @@
     "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-resume.git"
   },
   "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
+    "name": "Brian Eichenberger",
+    "email": "ike76@me.com"
   },
   "dependencies": {
-    "@mdx-js/mdx": "1.6.1",
-    "@mdx-js/react": "1.6.1",
     "babel-plugin-styled-components": "1.10.7",
     "bootstrap": "4.4.1",
     "classnames": "2.2.6",

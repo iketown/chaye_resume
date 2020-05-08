@@ -5,17 +5,7 @@ import styled from 'styled-components';
 import chaye from '../assets/images/chaye.png';
 import config from '../../config';
 
-import {
-  Collapse,
-  Button,
-  ListGroup,
-  ListGroupItem,
-  Nav,
-  NavItem,
-  NavLink,
-  NavbarToggler,
-  NavbarBrand,
-} from 'reactstrap';
+import { Collapse, Nav, NavItem, NavLink, NavbarBrand } from 'reactstrap';
 
 const Sidebar = () => {
   const tabs = [

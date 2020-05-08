@@ -1,10 +1,8 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-import Experience from '../components/Experience';
 // import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
-import config from '../../config';
 import ExperienceSection from '../components/ExperienceSection';
 import OverviewSection from '../components/OverviewSection';
 import EducationSection from '../components/EducationSection';

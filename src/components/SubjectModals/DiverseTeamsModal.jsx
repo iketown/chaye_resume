@@ -2,7 +2,6 @@ import React from 'react';
 import SubjectListItem from './SubjectListItem';
 import { ListGroup } from 'reactstrap';
 import GNSmall from '../../assets/images/goNoodleSmall.jpg';
-import goNood from '../../assets/images/GoNoodle-Logo.png';
 import gaylord from '../../assets/images/gaylord.png';
 import amex from '../../assets/images/amex.png';
 
