@@ -8,7 +8,7 @@ import config from '../../config';
 import ExperienceSection from '../components/ExperienceSection';
 import OverviewSection from '../components/OverviewSection';
 import EducationSection from '../components/EducationSection';
-import InterestsSection from '../components/InterestsSection';
+import InterestsSection from '../components/InterestsSection.jsx';
 const IndexPage = () => (
   <Layout>
     <Sidebar />

@@ -2,6 +2,7 @@ import React from 'react';
 import Experience from './Experience';
 import goNoodleSmall from '../assets/images/goNoodleSmall.jpg';
 import goNoodleLarge from '../assets/images/goNoodleLarge.png';
+import emeril from '../assets/images/logo-emeril.png';
 import emma from '../assets/images/emma.png';
 import amex from '../assets/images/amex.png';
 import gaylord from '../assets/images/gaylord.png';
@@ -31,18 +32,16 @@ const ExperienceSection = () => {
           slug="goNoodle"
           bullets={[
             {
-              text: `Evaluate, strategize, and deliver custom partnership
-            opportunities. Worked with clients including but not limited to:
-            Paramount, Nickelodeon, Disney, NFL, USTA, and Sony`,
+              text: `Evaluate, strategize, and deliver custom partnership opportunities. Worked with clients including but not limited to: Paramount, Nickelodeon, Disney, NFL, USTA, and Sony.`,
             },
             {
-              text: `Conceptualized, created, and executed integrated sales
-                proposals across multiple categories such as entertainment,
-                food, healthcare, sports and retail`,
+              text: `Conceptualized, created, and executed integrated sales proposals across multiple categories such as entertainment, food, healthcare, sports, retail, and media.`,
             },
             {
-              text: `Drive sales process pre, during, and post-sale, achieving a 168%
-                YOY increase in sales from 2018-2019.`,
+              text: `Drive sales process pre, during, and post-sale, achieving a 168% YOY increase in sales from 2018-2019.`,
+            },
+            {
+              text: `Managed the development and delivery of large scale projects that involved cross-departmental team contributions from product, content, marketing, c-suite, sales, and external stakeholders.`,
             },
           ]}
         />
@@ -82,7 +81,7 @@ const ExperienceSection = () => {
           slug="amex"
           bullets={[
             {
-              text: `Managed a team of 350+ agents: conducted needs assessments of staff based on performance provided training and feedback to increase individual team member productivity.`,
+              text: `Managed a team of 350+ agents: conducted needs assessments of staff based on performance, provided training and feedback to increase individual team member productivity, and set standards for involvement in a specialized program.`,
             },
             {
               text: `Designed and implemented business development solutions that enhanced the growth and success of the Consumer Travel division. Process improvement initiatives drove business success and resulted in:`,
@@ -107,7 +106,7 @@ const ExperienceSection = () => {
           modalContent={<GaylordModal />}
           bullets={[
             {
-              text: `Prospected, solicited, negotiated and closed new accounts with corporate partners, association and various other incentive accounts. `,
+              text: `Prospected, solicited, negotiated and closed new accounts with corporate partners, associations and various other incentive accounts. `,
             },
             {
               text: `Received multiple performance-based awards and recognition including:`,
@@ -122,6 +121,34 @@ const ExperienceSection = () => {
               ],
             },
           ]}
+        />
+
+        <Experience
+          positionTitle="Catering Sales Manager"
+          companyName="Gaylord Hotels"
+          startDate="2005-10"
+          endDate="2010-09"
+          largeImage={gaylord}
+          slug="gaylord"
+          modalContent={<GaylordModal />}
+          bullets={[
+            {
+              text: `Responsible for the sales and logistics of large convention food and beverage programs, ensuring new business development through strategic sales planning.`,
+              subList: [
+                `Exceeded Food and Beverage sales target of $51 million by $2 million.`,
+                `Upsold 70% above the contract value.`,
+                `Forecast group revenue within +/- 5% up to 12 months out.`,
+              ],
+            },
+          ]}
+        />
+
+        <Experience
+          companyName={`Emeril Lagasse's Homebase`}
+          positionTitle="Marketing Coordinator"
+          largeImage={emeril}
+          startDate="2004-04"
+          endDate="2005-09"
         />
       </div>
     </section>

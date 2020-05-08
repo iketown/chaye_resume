@@ -9,6 +9,7 @@ import {
   Col,
   Container,
 } from 'reactstrap';
+
 const Experience = ({
   positionTitle,
   companyName,
@@ -29,6 +30,7 @@ const Experience = ({
   };
   return (
     <Container>
+      <div id={slug} style={{ padding: '4px' }} className="mb-3" />
       <Row className="mb-3">
         <Col xs="12" md="9">
           <div>

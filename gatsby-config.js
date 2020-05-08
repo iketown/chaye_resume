@@ -6,6 +6,14 @@ module.exports = {
     title: config.siteTitle,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/md-pages`,
+      },
+    },
+    `gatsby-transformer-remark`,
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-styled-components`,
     {
