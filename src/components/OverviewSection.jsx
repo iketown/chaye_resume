@@ -21,10 +21,9 @@ const OverviewSection = () => {
           <p>My name is Chaye Eichenberger, nice to meet you!</p>
           <p>
             I have been in <b>Sales</b>, <b>Business Development</b>, and{' '}
-            <b>Account Management</b>
-            for 16+ years. I’ve worked for large companies like Gaylord Hotels
-            and American Express, as well as start ups such as Emma and
-            GoNoodle.
+            <b>Account Management</b> for 16+ years. I’ve worked for large
+            companies like Gaylord Hotels and American Express, as well as start
+            ups such as Emma and GoNoodle.
           </p>
           <p>
             My experience spans multiple industries, including hospitality,
