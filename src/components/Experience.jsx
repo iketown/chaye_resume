@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import moment from 'moment';
-import { Collapse, Modal, ModalFooter, Button } from 'reactstrap';
+import {
+  Collapse,
+  Modal,
+  ModalFooter,
+  Button,
+  Row,
+  Col,
+  Container,
+} from 'reactstrap';
 const Experience = ({
   positionTitle,
   companyName,
@@ -20,76 +28,89 @@ const Experience = ({
     if (moreContent) setShowExtra(true);
   };
   return (
-    <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-      <div className="resume-content w-100 ">
-        <div className="mb-2">
-          <h3 className="mb-0">{positionTitle}</h3>
-          <span className="subheading mb-3">{companyName}</span>
-        </div>
-        <ul style={{ padding: '0 0 0 0', listStyle: 'none' }}>
-          {bullets?.map(({ text, subList }) => {
-            return (
-              <li className="mb-2">
-                {text}
-                {subList && (
-                  <ul>
-                    {subList.map(subText => {
-                      return <li>{subText}</li>;
-                    })}
-                  </ul>
-                )}
-              </li>
-            );
-          })}
-        </ul>
-        {description}
-        {moreContent && <Collapse isOpen={showExtra}>{moreContent}</Collapse>}
-        {modalContent && (
-          <Modal
-            size="lg"
-            centered
-            isOpen={modalOpen}
-            toggle={() => setModalOpen(!modalOpen)}
+    <Container>
+      <Row className="mb-3">
+        <Col xs="12" md="9">
+          <div>
+            <h3 className="mb-0">{positionTitle}</h3>
+            <span className="subheading mb-3">{companyName}</span>
+          </div>
+        </Col>
+        <Col xs="12" md="3">
+          <div className="text-primary d-flex justify-content-lg-end">
+            <span className="text-nowrap">
+              {moment(startDate).format('MMM YYYY')}
+            </span>
+            <span className="ml-1 mr-1"> - </span>
+            <span className="text-nowrap">
+              {endDate === 'present'
+                ? 'present'
+                : moment(endDate).format('MMM YYYY')}
+            </span>
+          </div>
+        </Col>
+      </Row>
+      <Row className="mb-5">
+        <Col xs="12" md="9">
+          <div className="resume-content w-100 ">
+            <ul style={{ padding: '0 0 0 0', listStyle: 'none' }}>
+              {bullets?.map(({ text, subList }) => {
+                return (
+                  <li className="mb-2">
+                    {text}
+                    {subList && (
+                      <ul>
+                        {subList.map(subText => {
+                          return <li>{subText}</li>;
+                        })}
+                      </ul>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+            {description}
+            {moreContent && (
+              <Collapse isOpen={showExtra}>{moreContent}</Collapse>
+            )}
+            {modalContent && (
+              <Modal
+                size="lg"
+                centered
+                isOpen={modalOpen}
+                toggle={() => setModalOpen(!modalOpen)}
+              >
+                {modalContent}
+                <ModalFooter>
+                  <Button onClick={() => setModalOpen(false)}>OK</Button>
+                </ModalFooter>
+              </Modal>
+            )}
+            {(modalContent || moreContent) && (
+              <Button onClick={getMoreInfo} color="primary">
+                MORE INFO
+              </Button>
+            )}
+          </div>
+        </Col>
+        <Col xs="none" md="3">
+          <div
+            onClick={getMoreInfo}
+            className="d-flex justify-content-end"
+            style={{ cursor: 'pointer' }}
           >
-            {modalContent}
-            <ModalFooter>
-              <Button onClick={() => setModalOpen(false)}>OK</Button>
-            </ModalFooter>
-          </Modal>
-        )}
-        {(modalContent || moreContent) && (
-          <Button onClick={getMoreInfo} color="primary">
-            MORE INFO
-          </Button>
-        )}
-      </div>
-      <div
-        className="text-md-right ml-2"
-        style={{
-          width: '14rem',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'flex-end',
-        }}
-      >
-        <span className="text-primary nowrap">
-          {moment(startDate).format('MMM YYYY')} -{' '}
-          {endDate === 'present'
-            ? 'present'
-            : moment(endDate).format('MMM YYYY')}
-        </span>
-        <div onClick={getMoreInfo} style={{ cursor: 'pointer' }}>
-          <img
-            src={largeImage}
-            className="mt-4 d-none d-md-block"
-            style={{
-              maxWidth: '10rem',
-              maxHeight: '10rem',
-            }}
-          />
-        </div>
-      </div>
-    </div>
+            <img
+              src={largeImage}
+              className="mt-4 d-none d-md-block"
+              style={{
+                maxWidth: '10rem',
+                maxHeight: '10rem',
+              }}
+            />
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

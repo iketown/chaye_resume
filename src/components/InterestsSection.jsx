@@ -26,13 +26,16 @@ const InterestsSection = () => {
               </p>
               <p>
                 I enjoy cooking for my family and try to get a home cooked meal
-                on the table most nights. I work hard but take time to soak up
-                the sweet moments with friends and family.
+                on the table most nights.
+              </p>
+              <p>
+                Although I have less time these days, I have traveled often with
+                my husband and love the idea of more trips in our future.  I
+                work hard and also make time to soak up the sweet moments with
+                friends and family.
               </p>
             </Col>
-            {/* <Col xs="6" md="4" className="mb-3">
-              <img src={family} width="100%" />
-            </Col> */}
+
             <Col xs="6" md="4" className="mb-3">
               <img src={lourve} width="100%" />
             </Col>

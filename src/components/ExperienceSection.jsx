@@ -36,7 +36,7 @@ const ExperienceSection = () => {
             Paramount, Nickelodeon, Disney, NFL, USTA, and Sony`,
             },
             {
-              text: `Conceptualized, created, and executed integrated marketing
+              text: `Conceptualized, created, and executed integrated sales
                 proposals across multiple categories such as entertainment,
                 food, healthcare, sports and retail`,
             },

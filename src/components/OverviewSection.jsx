@@ -8,8 +8,10 @@ const OverviewSection = () => {
     >
       <div className="w-100">
         <h1 className="mb-0">
-          <span className="mr-2">{config.firstName}</span>
-          <span className="text-primary">{config.lastName}</span>
+          <span className="mr-2 d-block d-md-inline">{config.firstName}</span>
+          <span className="text-primary d-block d-md-inline">
+            {config.lastName}
+          </span>
         </h1>
         <div className="subheading mb-5">
           {config.address} · {config.phone} ·

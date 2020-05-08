@@ -1,31 +1,37 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
-
+import styled from 'styled-components';
 import chaye from '../assets/images/chaye.png';
 import config from '../../config';
 
-export class Sidebar extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      tabs: [
-        { content: 'About', href: 'about' },
-        { content: 'Experience', href: 'experience' },
-        { content: 'Education', href: 'education' },
-        { content: 'Interests', href: 'interests' },
-      ],
-    };
-  }
+import {
+  Collapse,
+  Button,
+  ListGroup,
+  ListGroupItem,
+  Nav,
+  NavItem,
+  NavLink,
+  NavbarToggler,
+  NavbarBrand,
+} from 'reactstrap';
 
-  render() {
-    const { tabs } = this.state;
-    return (
+const Sidebar = () => {
+  const tabs = [
+    { content: 'About', href: 'about' },
+    { content: 'Experience', href: 'experience' },
+    { content: 'Education', href: 'education' },
+    { content: 'Interests', href: 'interests' },
+  ];
+  const [menuOpen, setMenuOpen] = useState(false);
+  return (
+    <>
       <nav
         className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
         id="sideNav"
       >
-        <a className="navbar-brand" href="#page-top">
+        <NavbarBrand href="#page-top">
           <span className="d-block d-lg-none">
             {config.firstName} {config.lastName}
           </span>
@@ -36,19 +42,17 @@ export class Sidebar extends Component {
               alt=""
             />
           </span>
-        </a>
+        </NavbarBrand>
         <button
           className="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={() => setMenuOpen(old => !old)}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse">
           <Scrollspy
             items={tabs.map(s => s.href)}
             currentClassName="active"
@@ -70,8 +74,33 @@ export class Sidebar extends Component {
           </Scrollspy>
         </div>
       </nav>
-    );
-  }
-}
+      <StyledDropdown className="dropdown">
+        <Collapse isOpen={menuOpen} className="navbar-collapse ">
+          <Nav className="navbar-nav">
+            {tabs.map(({ href, content }, i) => {
+              return (
+                <NavItem
+                  className="pr-4"
+                  key={href}
+                  action
+                  onClick={() => setMenuOpen(false)}
+                >
+                  <NavLink href={`#${href}`}>{content}</NavLink>
+                </NavItem>
+              );
+            })}
+          </Nav>
+        </Collapse>
+      </StyledDropdown>
+    </>
+  );
+};
 
 export default Sidebar;
+
+const StyledDropdown = styled.div`
+  width: 100%;
+  text-align: right;
+  text-transform: uppercase;
+  background: #ffffffd9;
+`;
