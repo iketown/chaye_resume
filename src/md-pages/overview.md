@@ -2,11 +2,13 @@
 title: 'overview'
 ---
 
-My name is Chaye Eichenberger, nice to meet you!
+I am a mom, a wife, a seasoned sales leader, an exercise enthusiast, a lover of red wine, and a fan of being outdoors. Welcome to my site, I am glad you’re here.
+
+I created this space to provide prospective employers a unique look into my experience, interests, and accomplishments.
 
 I have been in Sales, Business Development, and Account Management for 16+ years. I’ve worked for large companies like Gaylord Hotels and American Express, as well as start ups such as Emma and GoNoodle.
 
-My experience spans multiple industries, including [hospitality](#gaylord), [SaaS](#emma), [travel](#amex), [entertainment](#goNoodle), and [media](#goNoodle).
+My experience spans multiple industries, including [hospitality](#gaylord), [SaaS](#emma), [travel](#amex), [entertainment and media](#goNoodle).
 
 While working in larger companies, I’ve come to understand the benefits of corporate structure and processes, the cadence of building business, and the requirements for making change.
 

@@ -12,6 +12,7 @@ const Sidebar = () => {
     { content: 'About', href: 'about' },
     { content: 'Experience', href: 'experience' },
     { content: 'Education', href: 'education' },
+    { content: 'References', href: 'references' },
     { content: 'Interests', href: 'interests' },
   ];
   const [menuOpen, setMenuOpen] = useState(false);

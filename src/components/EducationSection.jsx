@@ -14,6 +14,10 @@ const EducationSection = () => {
         <h2 className="mb-5">Education</h2>
         <Container>
           <Education
+            schoolName="Project Management Institute"
+            degreeName="Studying for Project Management Certification"
+          />
+          <Education
             schoolName="The Braintrust Group"
             degreeName="CSPO, Certified Scrum Product Owner"
             endDate="2018"
@@ -22,6 +26,21 @@ const EducationSection = () => {
             schoolName="Master Connection Associates"
             degreeName="Sales Productivity, Sales Strategies, World Class Customer Service Certification"
             endDate="2010 & 2012"
+          />
+          <Education
+            schoolName="Mad Dogg"
+            degreeName="Certified Spin Instructor"
+            endDate="2008"
+          />
+          <Education
+            schoolName="Gallo Wine Academy"
+            degreeName="Gallo Wine Expert Certified"
+            endDate="2008"
+          />
+          <Education
+            schoolName="Yoga Alliance Certified"
+            degreeName="Hot Yoga Instructor"
+            endDate="2007"
           />
           <Education
             schoolName="University of New Orleans"

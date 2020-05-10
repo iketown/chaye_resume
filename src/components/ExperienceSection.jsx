@@ -27,7 +27,7 @@ const ExperienceSection = () => {
           modalContent={<GoNoodleModal />}
           smallImage={goNoodleSmall}
           largeImage={goNoodleLarge}
-          startDate="2016-03"
+          startDate="2017-03"
           endDate="2020-05"
           slug="goNoodle"
           bullets={[
@@ -42,6 +42,32 @@ const ExperienceSection = () => {
             },
             {
               text: `Managed the development and delivery of large scale projects that involved cross-departmental team contributions from product, content, marketing, c-suite, sales, and external stakeholders.`,
+            },
+          ]}
+        />
+        <Experience
+          positionTitle="RVP, Partner Management"
+          companyName="GoNoodle"
+          modalContent={<GoNoodleModal />}
+          smallImage={goNoodleSmall}
+          largeImage={goNoodleLarge}
+          startDate="2016-04"
+          endDate="2017-03"
+          bullets={[
+            {
+              text: `Support prospective sales, build and maintain partner relationships. Ensure retention, expansion and growth through strategic planning and management. Ensure renewals, satisfaction and expansions across 26 key accounts.`,
+            },
+            {
+              text: `Key player in closing new business. Secured three new partnerships in under a year, resulting in $2.8 million in new revenue.`,
+            },
+            {
+              text: `Create and manage publicity strategies to drive community engagement.`,
+            },
+            {
+              text: `Train, mentor and manage the partnership director. Cross-departmental management - sales, marketing, in-field managers.`,
+            },
+            {
+              text: `Manage and liaise with internal and external stakeholders to ensure goals are met and strategic plans are executed.`,
             },
           ]}
         />

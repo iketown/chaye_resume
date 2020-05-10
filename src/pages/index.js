@@ -7,6 +7,7 @@ import ExperienceSection from '../components/ExperienceSection';
 import OverviewSection from '../components/OverviewSection';
 import EducationSection from '../components/EducationSection';
 import InterestsSection from '../components/InterestsSection.jsx';
+import ReferencesSection from '../components/ReferenceSection';
 const IndexPage = () => (
   <Layout>
     <Sidebar />
@@ -18,6 +19,9 @@ const IndexPage = () => (
       <hr className="m-0" />
 
       <EducationSection />
+      <hr className="m-0" />
+
+      <ReferencesSection />
       <hr className="m-0" />
 
       <InterestsSection />
