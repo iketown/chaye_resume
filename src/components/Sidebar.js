@@ -12,6 +12,7 @@ const Sidebar = () => {
     { content: 'About', href: 'about' },
     { content: 'Experience', href: 'experience' },
     { content: 'Education', href: 'education' },
+    { content: 'Recommendations', href: 'recommendations' },
     { content: 'References', href: 'references' },
     { content: 'Interests', href: 'interests' },
   ];
