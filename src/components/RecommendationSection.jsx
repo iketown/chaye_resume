@@ -41,6 +41,13 @@ const RecommendationSection = () => {
             text={`Chaye is an incredible professional. She is smart, dedicated and easy to work with. In her time at GoNoodle, she helped to shape and secure many of our key partnerships. She carries my highest recommendation and will be an asset to any team she works with.`}
           />
           <Recommendation
+            name="Lauren Baynes"
+            link="https://www.linkedin.com/in/laurenbaynes/"
+            title="Co-Founder"
+            company="BØRN BABY"
+            text={`I had the privilege of working with Chaye at GoNoodle for about a year. She is the perfect balance of being a leader and an executer. She is an expert at getting all the right people in the room to solve a problem, delegating responsibilities and communicating a clear action plan for getting to a resolution. Typically that plan involves Chaye rolling up her sleeves to do her part to get it done. She will do whatever is necessary to complete a project, even if that means challenging the status quo in order to have a more strategic and successful outcome. I have seen her navigate intense amounts of change and pressure with ease and a 'can do' attitude. Not only is she one of the hardest working women I know, she is thoughtful and kind. Any organization would be fortunate to have Chaye on their team.`}
+          />
+          <Recommendation
             name="Alyssa Taifi"
             link="https://www.linkedin.com/in/alyssataifi/"
             title="MSHR - Regional Retail Admin"
