@@ -30,7 +30,7 @@ const EducationSection = () => {
           />
           <Education
             schoolName="Project Management Institute"
-            degreeName="Studying for CAPM"
+            degreeName="Studying for PMP"
             endDate="2020"
           />
           <Education
