@@ -20,6 +20,7 @@ const ImgContainer = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.08;
+    ${p => p.fullSizeBGImage && `opacity: .7; background-size: cover;`}
   }
 `;
 const ExtraInfoModal = ({
@@ -29,6 +30,7 @@ const ExtraInfoModal = ({
   banner,
   bgImage,
   children,
+  fullSizeBGImage,
 }) => {
   return (
     <div>
@@ -40,7 +42,7 @@ const ExtraInfoModal = ({
           alt={`${companyName} Logo`}
         />
       )}
-      <ImgContainer bgImage={bgImage}>
+      <ImgContainer bgImage={bgImage} fullSizeBGImage={fullSizeBGImage}>
         <ModalBody>{children}</ModalBody>
       </ImgContainer>
     </div>

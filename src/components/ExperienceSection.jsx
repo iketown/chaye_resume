@@ -2,6 +2,7 @@ import React from 'react';
 import Experience from './Experience';
 import goNoodleSmall from '../assets/images/goNoodleSmall.jpg';
 import goNoodleLarge from '../assets/images/goNoodleLarge.png';
+import openlyImg from '../assets/images/Openly_draft.png';
 import emeril from '../assets/images/logo-emeril.png';
 import emma from '../assets/images/emma.png';
 import amex from '../assets/images/amex.png';
@@ -10,6 +11,7 @@ import GoNoodleModal from './ExtraInfoModals/GoNoodleModal';
 import EmmaModal from './ExtraInfoModals/EmmaModal';
 import AmexModal from './ExtraInfoModals/AmexModal';
 import GaylordModal from './ExtraInfoModals/GaylordModal';
+import OpenlyModal from './ExtraInfoModals/OpenlyModal';
 //
 //
 const ExperienceSection = () => {
@@ -21,6 +23,24 @@ const ExperienceSection = () => {
       <div className="w-100">
         <h2 className="mb-5">Experience</h2>
 
+        <Experience
+          positionTitle="Consultant"
+          companyName="Openly"
+          modalContent={<OpenlyModal />}
+          smallImage={openlyImg}
+          largeImage={openlyImg}
+          startDate="2020-07"
+          endDate="present"
+          slug="openly"
+          bullets={[
+            {
+              text: `Sales and business development for a population health management service that provides a means to efficiently screen, monitor and manage the health of up to 100% of a specified population.`,
+            },
+            {
+              text: `The mobile app allows users to capture vital signs (such as oxygen saturation, respiratory rate and heart rate) and other meaningful clinical data that can indicate the early onset of illness.`,
+            },
+          ]}
+        />
         <Experience
           positionTitle="VP, Sales Solutions and Account Management"
           companyName="GoNoodle"
