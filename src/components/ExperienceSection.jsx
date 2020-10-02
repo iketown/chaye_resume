@@ -30,7 +30,7 @@ const ExperienceSection = () => {
           smallImage={openlyImg}
           largeImage={openlyImg}
           startDate="2020-07"
-          endDate="present"
+          endDate="2020-09"
           slug="openly"
           bullets={[
             {
