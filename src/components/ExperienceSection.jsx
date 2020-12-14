@@ -6,12 +6,14 @@ import openlyImg from '../assets/images/Openly_draft.png';
 import emeril from '../assets/images/logo-emeril.png';
 import emma from '../assets/images/emma.png';
 import amex from '../assets/images/amex.png';
+import ovation from '../assets/images/ovation.png';
 import gaylord from '../assets/images/gaylord.png';
 import GoNoodleModal from './ExtraInfoModals/GoNoodleModal';
 import EmmaModal from './ExtraInfoModals/EmmaModal';
 import AmexModal from './ExtraInfoModals/AmexModal';
 import GaylordModal from './ExtraInfoModals/GaylordModal';
 import OpenlyModal from './ExtraInfoModals/OpenlyModal';
+import OvationModal from './ExtraInfoModals/OvationModal';
 //
 //
 const ExperienceSection = () => {
@@ -23,6 +25,33 @@ const ExperienceSection = () => {
       <div className="w-100">
         <h2 className="mb-5">Experience</h2>
 
+        <Experience
+          positionTitle="VP CLIENT SERVICES AND OPERATIONS"
+          companyName="Ovation"
+          modalContent={<OvationModal />}
+          smallImage={ovation}
+          largeImage={ovation}
+          startDate="2020-11"
+          endDate="present"
+          slug="ovation"
+          bullets={[
+            {
+              text: `Lead the sales support, client services, and production teams.`,
+            },
+            {
+              text: `Own the retention, renewal, revenue, and margin growth for Ovation’s entire client portfolio.`,
+            },
+            {
+              text: `Develop, refine, and implement account management practices and overall company best practices.`,
+            },
+            {
+              text: `Contribute to new business wins through content contribution and pitch participation.`,
+            },
+            {
+              text: `Oversee and ensure the end to end delivery of quality customer experiences.`,
+            },
+          ]}
+        />
         <Experience
           positionTitle="Consultant"
           companyName="Openly"

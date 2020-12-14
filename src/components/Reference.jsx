@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Row, Col } from 'reactstrap';
+import { Col, Row } from 'reactstrap';
+
 const Recommendation = ({ name, title, company, link, relation }) => {
   return (
     <Row className="resume-item  mb-5">
