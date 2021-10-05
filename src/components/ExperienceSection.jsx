@@ -26,7 +26,7 @@ const ExperienceSection = () => {
         <h2 className="mb-5">Experience</h2>
 
         <Experience
-          positionTitle="VP CLIENT SERVICES AND OPERATIONS"
+          positionTitle="VP CLIENT SUCCESS AND SERVICES"
           companyName="Ovation"
           modalContent={<OvationModal />}
           smallImage={ovation}
@@ -36,7 +36,10 @@ const ExperienceSection = () => {
           slug="ovation"
           bullets={[
             {
-              text: `Lead the sales support, client services, and production teams.`,
+              text: `14 direct reports.`,
+            },
+            {
+              text: `Lead the sales support, client services, creative, development, technical and production teams.`,
             },
             {
               text: `Own the retention, renewal, revenue, and margin growth for Ovation’s entire client portfolio.`,
@@ -48,7 +51,13 @@ const ExperienceSection = () => {
               text: `Contribute to new business wins through content contribution and pitch participation.`,
             },
             {
+              text: `Coach/player role within sales and account management/client services.`,
+            },
+            {
               text: `Oversee and ensure the end to end delivery of quality customer experiences.`,
+            },
+            {
+              text: `Report directly to CEO.`,
             },
           ]}
         />
