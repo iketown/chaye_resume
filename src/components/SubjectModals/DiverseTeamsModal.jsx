@@ -4,10 +4,16 @@ import { ListGroup } from 'reactstrap';
 import GNSmall from '../../assets/images/goNoodleSmall.jpg';
 import gaylord from '../../assets/images/gaylord.png';
 import amex from '../../assets/images/amex.png';
-
+import ovat from '../../assets/images/ovation_small.jpg';
 const DiverseTeamsModal = () => {
   return (
     <ListGroup flush>
+      <SubjectListItem image={ovat} company="Ovation Events">
+        Manage a team of 14 across different fields of expertise including:
+        video, creative, production, developers, and technical. Develop
+        processes that have allowed our teams to communicate more effectively
+        and collaboratively.
+      </SubjectListItem>
       <SubjectListItem image={amex} company="American Express Travel">
         Managed a team of 350+ agents: conducted needs assessments of staff
         based on performance, provided training and feedback to increase
