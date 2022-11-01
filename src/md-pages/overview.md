@@ -6,7 +6,7 @@ I am a mom, a wife, a seasoned sales leader, an exercise enthusiast, a lover of 
 
 I created this space to provide prospective employers a unique look into my experience, interests, and accomplishments.
 
-I have been in Sales, Business Development, and Account Management for 16+ years. I’ve worked for large companies like Gaylord Hotels and American Express, as well as start ups such as Emma and GoNoodle.
+I have been in Sales, Business Development, and Account Management for nearly 20 years. I’ve worked for large companies like Gaylord Hotels and American Express, as well as start ups such as Emma and GoNoodle.
 
 My experience spans multiple industries, including [hospitality](#gaylord), [SaaS](#emma), [travel](#amex), [entertainment and media](#goNoodle).
 
